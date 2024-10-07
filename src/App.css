@@ -28,6 +28,43 @@
   color: #61dafb;
 }
 
+/* Add these rules to App.css or style.css */
+
+/* Set body and html height to 100% */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure the main app container takes full height */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make sure the content before the footer takes the remaining height */
+main {
+  flex: 1;
+}
+
+/* Style footer to be at the bottom */
+.footer {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
